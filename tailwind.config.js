@@ -10,7 +10,7 @@ module.exports = {
           "'Josefin Sans', sans-serif",
           ...defaultTheme.fontFamily.sans,
         ],
-        primary: ["Poppins', sans-serif"],
+        primary: ["'Poppins', sans-serif"],
       },
     },
   },
