@@ -1,10 +1,11 @@
 <template>
   <nav>
     <div class="w-full flex justify-between absolute">
-      <div class="p-2">
+      <div class="p-5">
         <img src="/img/logo.png" alt="Infy.plus logo" class="w-20" />
       </div>
-      <div class="fixed z-50 right-0 p-3">
+      <div class="fixed z-50 right-0 p-5">
+        <sec-indicator />
         <div
           class="
             p-3
@@ -53,11 +54,13 @@
 import { MenuAlt4Icon, XIcon } from "@heroicons/vue/solid";
 import { ref } from "@vue/reactivity";
 import Navlink from "./Navlink.vue";
+import SecIndicator from "./secIndicator.vue";
 export default {
   components: {
     MenuAlt4Icon,
     XIcon,
     Navlink,
+    SecIndicator,
   },
   setup() {
     let menuOpen = ref(false);
@@ -71,6 +74,7 @@ export default {
       { id: 4, link: "#", linkTitle: "Products" },
       { id: 5, link: "#", linkTitle: "Contact" },
     ];
+
     return {
       menuOpen,
       menuClick,

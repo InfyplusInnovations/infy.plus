@@ -1,5 +1,6 @@
 <template>
-  <div class="w-screen bg-gray-900">
+  <div class="overflow-hidden bg-gray-900 bg-opacity-60">
+    <div id="home" class="fixed -z-10"></div>
     <Nav />
     <Hero />
     <OurWorks />
@@ -31,3 +32,23 @@ export default {
   setup() {},
 };
 </script>
+<style scoped>
+#home {
+  background: url("/img/bg.svg");
+  top: -60%;
+  left: -60%;
+  height: calc(100vw + 1500px);
+  width: calc(100vw + 1500px);
+  background-size: 200%;
+  animation: bgMove 40s linear infinite;
+}
+@keyframes bgMove {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+</style>
