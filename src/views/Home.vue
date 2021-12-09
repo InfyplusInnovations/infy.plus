@@ -36,11 +36,11 @@ export default {
 #home {
   background: url("/img/bg.svg");
   top: -60%;
-  left: -60%;
+  left: -55%;
   height: calc(100vw + 1500px);
   width: calc(100vw + 1500px);
   background-size: 200%;
-  animation: bgMove 40s linear infinite;
+  animation: bgMove 50s linear infinite;
 }
 @keyframes bgMove {
   0% {

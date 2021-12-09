@@ -26,11 +26,7 @@
             font-secondary
           "
         >
-          <li>HOME</li>
-          <li>WORK</li>
-          <li>ABOUT</li>
-          <li>PRODUCTS</li>
-          <li>CONTACT</li>
+          <navlink :linkDetails="links" v-for="link in links" :key="link.id" />
         </ul>
 
         <h3 class="font-bold text-blue-400 py-3 font-secondary">
@@ -41,8 +37,20 @@
   </section>
 </template>
 <script>
+import Navlink from "../Nav/Navlink.vue";
 export default {
-  components: {},
-  setup() {},
+  components: { Navlink },
+  setup() {
+    let links = [
+      { id: 1, link: "#", linkTitle: "Home" },
+      { id: 2, link: "#", linkTitle: "Works" },
+      { id: 3, link: "#", linkTitle: "About" },
+      { id: 4, link: "#", linkTitle: "Products" },
+      { id: 5, link: "#", linkTitle: "Contact" },
+    ];
+    return {
+      links,
+    };
+  },
 };
 </script>
