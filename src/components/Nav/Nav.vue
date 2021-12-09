@@ -19,7 +19,6 @@
           @click="menuClick"
         >
           <MenuAlt4Icon v-if="!menuOpen" />
-
           <XIcon v-else />
         </div>
       </div>
