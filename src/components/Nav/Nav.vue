@@ -49,7 +49,7 @@ export default {
     let links = [
       { id: 1, link: "#", linkTitle: "Home" },
       { id: 2, link: "#", linkTitle: "Works" },
-      { id: 3, link: "#", linkTitle: "About" },
+      { id: 3, link: "/about", linkTitle: "About" },
       { id: 4, link: "#", linkTitle: "Products" },
       { id: 5, link: "#", linkTitle: "Contact" },
     ];
