@@ -1,13 +1,16 @@
 <template>
   <div class="overflow-hidden bg-gray-900 bg-opacity-60">
-    <div id="home" class="fixed -z-10"></div>
-    <Nav />
-    <Hero />
-    <OurWorks />
-    <services />
-    <testimonials />
-    <contact />
-    <Footer />
+    <!-- <div id="home" class="fixed -z-10"></div> -->
+    <bg-star class="fixed -z-10" />
+    <div class="h-screen w-screen overflow-y-auto">
+      <Nav />
+      <Hero />
+      <OurWorks />
+      <services />
+      <testimonials />
+      <contact />
+      <Footer />
+    </div>
   </div>
 </template>
 <script>
@@ -16,7 +19,7 @@ import Nav from "../components/Nav/Nav.vue";
 import Hero from "../components/sections/Hero.vue";
 import Testimonials from "../components/sections/Testimonials.vue";
 import Contact from "../components/sections/Contact.vue";
-
+import BgStar from "@/components/bg/BgStar.vue";
 import Footer from "../components/sections/Footer.vue";
 import Services from "@/components/sections/Services/Services.vue";
 export default {
@@ -28,12 +31,13 @@ export default {
     Contact,
     Footer,
     Services,
+    BgStar,
   },
   setup() {},
 };
 </script>
 <style scoped>
-#home {
+/* #home {
   background: url("/img/bg.svg");
   top: -60%;
   left: -55%;
@@ -41,7 +45,7 @@ export default {
   width: calc(100vw + 1500px);
   background-size: 200%;
   animation: bgMove 50s linear infinite;
-}
+} */
 @keyframes bgMove {
   0% {
     transform: rotate(0);
