@@ -1,5 +1,8 @@
 <template>
-  <section class="flex flex-col justify-center items-center p-5 py-10 h-screen">
+  <section
+    class="flex flex-col justify-center items-center p-5 py-10 h-screen"
+    id="work"
+  >
     <h2 class="text-blue-400 font-bold text-2xl py-2 font-secondary">
       infyplus
     </h2>

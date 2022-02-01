@@ -45,19 +45,19 @@ export default {
         color: "blue",
       },
       {
-        id: 1,
+        id: 2,
         name: "Web Development",
         component: CodeIcon,
         color: "red",
       },
       {
-        id: 1,
+        id: 3,
         name: "Hosting",
         component: ServerIcon,
         color: "yellow",
       },
       {
-        id: 1,
+        id: 4,
         name: "App Development",
         component: DeviceMobileIcon,
         color: "green",

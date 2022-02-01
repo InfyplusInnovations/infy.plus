@@ -15,18 +15,14 @@
         </h2>
         <h3 class="font-bold text-blue-400 py-3 font-secondary">NAVIGATIONS</h3>
         <ul
-          class="
-            py-3
-            font-bold
-            text-gray-900
-            flex
-            space-x-3
-            flex-wrap
-            items-start
-            font-secondary
-          "
+          class="py-3 font-bold text-gray-900 flex space-x-3 flex-wrap items-start font-secondary"
         >
-          <navlink :linkDetails="links" v-for="link in links" :key="link.id" />
+          <navlink
+            :linkDetails="link"
+            v-for="link in links"
+            :key="link.id"
+            class="text-xl"
+          />
         </ul>
 
         <h3 class="font-bold text-blue-400 py-3 font-secondary">

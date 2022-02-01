@@ -5,17 +5,8 @@
         <img src="/img/logo.png" alt="Infy.plus logo" class="w-20" />
       </div>
       <div class="fixed z-50 right-0 p-5">
-        <sec-indicator />
         <div
-          class="
-            p-3
-            bg-blue-400
-            w-12
-            h-12
-            rounded-full
-            text-center
-            cursor-pointer
-          "
+          class="p-3 bg-blue-400 w-12 h-12 rounded-full text-center cursor-pointer"
           @click="menuClick"
         >
           <MenuAlt4Icon v-if="!menuOpen" />
@@ -28,17 +19,7 @@
       v-if="menuOpen"
     >
       <ul
-        class="
-          flex flex-col
-          space-y-3
-          text-white
-          font-secondary
-          items-center
-          h-full
-          text-2xl
-          justify-center
-          font-bold
-        "
+        class="flex flex-col space-y-3 text-white font-secondary items-center h-full text-2xl justify-center font-bold"
       >
         <navlink :linkDetails="link" v-for="link in links" :key="link.id" />
         <!-- <li><a href="#work" class="hover:text-blue-400">Work</a></li>
@@ -53,13 +34,12 @@
 import { MenuAlt4Icon, XIcon } from "@heroicons/vue/solid";
 import { ref } from "@vue/reactivity";
 import Navlink from "./Navlink.vue";
-import SecIndicator from "./secIndicator.vue";
+
 export default {
   components: {
     MenuAlt4Icon,
     XIcon,
     Navlink,
-    SecIndicator,
   },
   setup() {
     let menuOpen = ref(false);
