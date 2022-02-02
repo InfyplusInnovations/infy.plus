@@ -36,23 +36,3 @@ export default {
   setup() {},
 };
 </script>
-<style scoped>
-/* #home {
-  background: url("/img/bg.svg");
-  top: -60%;
-  left: -55%;
-  height: calc(100vw + 1500px);
-  width: calc(100vw + 1500px);
-  background-size: 200%;
-  animation: bgMove 50s linear infinite;
-} */
-@keyframes bgMove {
-  0% {
-    transform: rotate(0);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}
-</style>

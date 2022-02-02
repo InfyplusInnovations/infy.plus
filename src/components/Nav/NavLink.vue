@@ -1,8 +1,8 @@
 <template>
   <li>
-    <a :href="linkDetails.link" class="hover:text-blue-400">{{
+    <router-link :to="linkDetails.link" class="hover:text-blue-400">{{
       linkDetails.linkTitle
-    }}</a>
+    }}</router-link>
   </li>
 </template>
 <script>

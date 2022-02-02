@@ -14,6 +14,8 @@ export default {
       const OVERFLOW_THRESHOLD = 50;
       const STAR_COUNT = (window.innerWidth + window.innerHeight) / 8;
 
+      // const STAR_COUNT = STAR_COUNTs < 50 ? 500 : STAR_COUNT;
+
       const context = canvas.getContext("2d");
 
       let scale = 1, // device pixel ratio

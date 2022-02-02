@@ -33,7 +33,7 @@
 <script>
 import { MenuAlt4Icon, XIcon } from "@heroicons/vue/solid";
 import { ref } from "@vue/reactivity";
-import Navlink from "./Navlink.vue";
+import Navlink from "./NavLink.vue";
 
 export default {
   components: {

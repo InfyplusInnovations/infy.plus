@@ -33,7 +33,7 @@
   </section>
 </template>
 <script>
-import Navlink from "../Nav/Navlink.vue";
+import Navlink from "../Nav/NavLink.vue";
 export default {
   components: { Navlink },
   setup() {
