@@ -11,50 +11,31 @@
         </h3>
       </div>
       <div class="max-w-2xl w-full">
-        <form>
+        <form @submit.prevent="formSubmit">
           <input
             type="text"
-            class="
-              my-8
-              block
-              w-full
-              rounded-md
-              text-white
-              bg-gray-800
-              border-transparent
-              focus:border-blue-500 focus:bg-gray-800 focus:ring-0
-            "
+            class="my-8 block w-full rounded-md text-white bg-gray-800 border-transparent focus:border-blue-500 focus:bg-gray-800 focus:ring-0"
             placeholder="Enter your name"
+            required
+          />
+          <input
+            type="email"
+            class="my-8 block w-full rounded-md text-white bg-gray-800 border-transparent focus:border-blue-500 focus:bg-gray-800 focus:ring-0"
+            placeholder="Enter your email"
+            required
           />
           <input
             type="text"
-            class="
-              my-8
-              block
-              w-full
-              rounded-md
-              text-white
-              bg-gray-800
-              border-transparent
-              focus:border-blue-500 focus:bg-gray-800 focus:ring-0
-            "
-            placeholder="Enter your name"
+            class="my-8 block w-full rounded-md text-white bg-gray-800 border-transparent focus:border-blue-500 focus:bg-gray-800 focus:ring-0"
+            placeholder="Enter your phone"
           />
-          <input
-            type="text"
-            class="
-              my-8
-              block
-              w-full
-              rounded-md
-              text-white
-              bg-gray-800
-              border-transparent
-              focus:border-blue-500 focus:bg-gray-800 focus:ring-0
-            "
-            placeholder="Enter your name"
-          />
-          <Button color="blue">submit</Button>
+          <textarea
+            name=""
+            id=""
+            class="my-8 block w-full rounded-md text-white bg-gray-800 border-transparent focus:border-blue-500 focus:bg-gray-800 focus:ring-0"
+            placeholder="Message"
+          ></textarea>
+          <Button color="blue" type="submit">submit</Button>
         </form>
       </div>
     </div>
@@ -64,6 +45,13 @@
 import Button from "../shared/Button.vue";
 export default {
   components: { Button },
-  setup() {},
+  setup() {
+    const formSubmit = () => {
+      console.log("submit");
+    };
+    return {
+      formSubmit,
+    };
+  },
 };
 </script>

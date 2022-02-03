@@ -1,6 +1,6 @@
 <template>
   <section
-    class="flex flex-col justify-center items-center p-5 py-10 h-screen"
+    class="flex flex-col justify-center items-center relative p-5 py-10 h-90vh"
     id="work"
   >
     <h2 class="text-blue-400 font-bold text-2xl py-2 font-secondary">
@@ -19,16 +19,7 @@
         Contact us
       </div>
       <div
-        class="
-          font-bold
-          text-blue-400 text-2xl
-          py-1
-          absolute
-          -right-10
-          bottom-20
-          rotate-90
-          font-secondary
-        "
+        class="font-bold text-blue-400 text-2xl py-1 absolute -right-10 bottom-20 rotate-90 font-secondary"
       >
         Our Works ->
       </div>

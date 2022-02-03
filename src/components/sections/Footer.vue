@@ -1,5 +1,5 @@
 <template>
-  <section id="Footer w-screen">
+  <section id="Footer w-screen relative">
     <div class="w-full h-12 flex">
       <div
         class="w-1/2 bg-gradient-to-r from-blue-200 to-pink-300 h-full"
@@ -30,12 +30,23 @@
         </h3>
       </div>
     </div>
+    <div
+      class="bg-black bg-cover w-full h-72 overflow-hidden flex flex-col justify-center items-center p-5"
+    >
+      <h2
+        class="font-bold text-2xl text-center md:text-3xl text-white py-3 font-primary"
+      >
+        Intrested ? Get in touch with us
+      </h2>
+      <button-repo btnText="Contact Us" />
+    </div>
   </section>
 </template>
 <script>
+import ButtonRepo from "../ButtonRepo.vue";
 import Navlink from "../Nav/NavLink.vue";
 export default {
-  components: { Navlink },
+  components: { Navlink, ButtonRepo },
   setup() {
     let links = [
       { id: 1, link: "#", linkTitle: "Home" },

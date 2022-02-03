@@ -1,5 +1,5 @@
 <template>
-  <div class="overflow-hidden bg-gray-900 bg-opacity-60">
+  <div class="overflow-hidden bg-gray-900 bg-opacity-50">
     <!-- <div id="home" class="fixed -z-10"></div> -->
     <bg-star class="fixed -z-10" />
     <div class="h-screen w-screen overflow-y-auto">

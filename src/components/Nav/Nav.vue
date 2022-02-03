@@ -1,6 +1,6 @@
 <template>
   <nav>
-    <div class="w-full flex justify-between absolute">
+    <div class="w-full flex justify-between relative">
       <div class="p-5">
         <img src="/img/logo.png" alt="Infy.plus logo" class="w-20" />
       </div>
@@ -15,7 +15,7 @@
       </div>
     </div>
     <div
-      class="w-screen h-screen fixed bg-black bg-opacity-80 z-40"
+      class="w-screen h-screen fixed bg-black bg-opacity-80 z-40 top-0"
       v-if="menuOpen"
     >
       <ul
