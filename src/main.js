@@ -9,15 +9,6 @@ const app = createApp(App);
 const router = createRouter({
   history: createWebHistory(),
   routes,
-  scrollBehavior(to) {
-    if (to.hash) {
-      return {
-        el: to.hash,
-        behavior: "smooth",
-        top: -10,
-      };
-    }
-  },
 });
 
 app.use(router);
