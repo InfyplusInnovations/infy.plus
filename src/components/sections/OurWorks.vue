@@ -9,13 +9,15 @@
         siteURL="https://meerahealthcare.com"
         title="Meerahealthcare"
         content=" is a health care and educational service provider located near nedumkandam idukki"
+        imgURL="/img/MeeraHealthcare.png"
       />
       <our-works-card
         pattern="red"
-        logoURL="RNglobalLogo.png"
-        siteURL="https://meerahealthcare.com"
-        title="RN Global"
-        content=" is an International nurses recruitment agency, placing thousands of nurses across UK, Ireland, Australia and New Zealand"
+        logoURL="edusatarLogo.png"
+        siteURL="https://edustarfastrack.com"
+        title="Edustar Fastrack "
+        content="is an Excellent public school located at narakakkanam"
+        imgURL="/img/EdustarFastrack.png"
       />
       <our-works-card
         pattern="green"
@@ -23,6 +25,16 @@
         siteURL="https://sjupsnarakakkanam.com"
         title="SJUPS Narakakkanam "
         content="is an Excellent public school located at narakakkanam"
+        imgURL="/img/school.jpeg"
+      />
+
+      <our-works-card
+        pattern="red"
+        logoURL="RNglobalLogo.png"
+        siteURL="https://rnglobalsolution.com"
+        title="RN Global"
+        content=" is an International nurses recruitment agency, placing thousands of nurses across UK, Ireland, Australia and New Zealand"
+        imgURL="/img/RNGlobal.png"
       />
     </div>
   </section>

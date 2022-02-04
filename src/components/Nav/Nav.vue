@@ -47,11 +47,11 @@ export default {
       menuOpen.value = !menuOpen.value;
     };
     let links = [
-      { id: 1, link: "#", linkTitle: "Home" },
-      { id: 2, link: "#", linkTitle: "Works" },
+      { id: 1, link: "/#home", linkTitle: "Home" },
+      { id: 2, link: "/#works", linkTitle: "Works" },
       { id: 3, link: "/about", linkTitle: "About" },
-      { id: 4, link: "#", linkTitle: "Products" },
-      { id: 5, link: "#", linkTitle: "Contact" },
+      { id: 4, link: "/products", linkTitle: "Products" },
+      { id: 5, link: "/#contact", linkTitle: "Contact" },
     ];
 
     return {

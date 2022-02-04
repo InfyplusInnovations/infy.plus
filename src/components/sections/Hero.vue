@@ -1,7 +1,7 @@
 <template>
   <section
     class="flex flex-col justify-center items-center relative p-5 py-10 h-90vh"
-    id="work"
+    id="home"
   >
     <h2 class="text-blue-400 font-bold text-2xl py-2 font-secondary">
       infyplus
@@ -10,7 +10,7 @@
       Innovations Beyond Imaginations
     </h1>
     <p class="text-white text-center py-2 font-secondary">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, tempora!
+      We Build Awesome Digital Experiences!
     </p>
     <div class="py-3">
       <div

@@ -38,7 +38,7 @@
             : pattern === 'blue'
             ? 'bg-blue-700 hover:bg-blue-500'
             : 'bg-gray-200 hover:bg-gray-300'
-        } rounded-full bg-red-600 flex justify-center items-center text-white top-10`"
+        } rounded-full  flex justify-center items-center text-white top-10`"
       >
         <!-- <div
       class="absolute z-10 w-24 h-24 rounded-full bg-gray-300 flex justify-center items-center text-white top-10"
@@ -63,16 +63,16 @@
     </div>
     <div
       id="currentcontent"
-      class="hidden md:block absolute -right-20 -bottom-5 transition-all delay-150 ease-in-out"
+      class="hidden md:block absolute -right-20 -bottom-8 transition-all delay-150 ease-in-out"
     >
-      <img src="/img/RNGlobal.png" class="w-80 rounded-md opacity-90" alt="" />
+      <img :src="imgURL" class="w-80 rounded-md opacity-90" alt="" />
     </div>
   </div>
 </template>
 <script>
 import Button from "./shared/Button.vue";
 export default {
-  props: ["pattern", "logoURL", "siteURL", "title", "content"],
+  props: ["pattern", "logoURL", "siteURL", "title", "content", "imgURL"],
   components: {
     Button,
   },

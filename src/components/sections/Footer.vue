@@ -38,7 +38,9 @@
       >
         Intrested ? Get in touch with us
       </h2>
-      <button-repo btnText="Contact Us" />
+      <a href="/#contact" class="px-3 py-3 rounded-lg bg-white text-blue-500">
+        contact
+      </a>
     </div>
   </section>
 </template>
@@ -49,11 +51,11 @@ export default {
   components: { Navlink, ButtonRepo },
   setup() {
     let links = [
-      { id: 1, link: "#", linkTitle: "Home" },
-      { id: 2, link: "#", linkTitle: "Works" },
-      { id: 3, link: "#", linkTitle: "About" },
-      { id: 4, link: "#", linkTitle: "Products" },
-      { id: 5, link: "#", linkTitle: "Contact" },
+      { id: 1, link: "/#home", linkTitle: "Home" },
+      { id: 2, link: "/#works", linkTitle: "Works" },
+      { id: 3, link: "/about", linkTitle: "About" },
+      { id: 4, link: "/products", linkTitle: "Products" },
+      { id: 5, link: "/#contact", linkTitle: "Contact" },
     ];
     return {
       links,
