@@ -1,6 +1,6 @@
 <template>
   <div
-    id="works"
+    id="card"
     :class="`
       bg-gray-800
       border-4 
@@ -84,10 +84,10 @@ export default {
   #innercontent {
     opacity: 0;
   }
-  #works:hover #innercontent {
+  #card:hover #innercontent {
     opacity: 100;
   }
-  #works:hover #currentcontent {
+  #card:hover #currentcontent {
     bottom: -500px;
   }
 }
