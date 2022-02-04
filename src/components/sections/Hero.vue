@@ -1,7 +1,6 @@
 <template>
   <section
     class="flex flex-col justify-center items-center relative p-5 py-10 h-90vh"
-    id="home"
   >
     <h2 class="text-blue-400 font-bold text-2xl py-2 font-secondary">
       infyplus

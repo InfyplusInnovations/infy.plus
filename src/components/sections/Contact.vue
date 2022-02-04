@@ -1,8 +1,5 @@
 <template>
-  <section
-    id="contact"
-    class="flex flex-col justify-center items-center py-12 p-5"
-  >
+  <section class="flex flex-col justify-center items-center py-12 p-5">
     <div class="w-full max-w-7xl">
       <div class="">
         <h3 class="font-bold text-white text-xl font-secondary">

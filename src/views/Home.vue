@@ -2,13 +2,13 @@
   <div class="overflow-hidden bg-gray-900 bg-opacity-50">
     <!-- <div id="home" class="fixed -z-10"></div> -->
     <bg-star class="fixed -z-10" />
-    <div class="h-screen w-screen overflow-y-auto">
+    <div class="h-screen w-screen overflow-y-auto" ref="homeScroll">
       <Nav />
-      <Hero />
-      <OurWorks />
-      <services />
-      <testimonials />
-      <contact />
+      <Hero id="home" />
+      <OurWorks id="works" />
+      <services id="services" />
+      <testimonials id="testimonials" />
+      <contact id="contact" />
       <Footer />
     </div>
   </div>
@@ -22,6 +22,9 @@ import Contact from "../components/sections/Contact.vue";
 import BgStar from "@/components/bg/BgStar.vue";
 import Footer from "../components/sections/Footer.vue";
 import Services from "@/components/sections/Services/Services.vue";
+import { useRouter } from "vue-router";
+import { onMounted, ref } from "@vue/runtime-core";
+
 export default {
   components: {
     Nav,
@@ -33,6 +36,21 @@ export default {
     Services,
     BgStar,
   },
-  setup() {},
+  setup() {
+    const router = useRouter();
+    let homeScroll = ref(null);
+    onMounted(() => {
+      router.afterEach((to, from) => {
+        if (to.hash) {
+          homeScroll.value.scrollTop = document.querySelector(
+            to.hash
+          ).offsetTop;
+        }
+      });
+    });
+    return {
+      homeScroll,
+    };
+  },
 };
 </script>
