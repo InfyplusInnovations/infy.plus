@@ -24,7 +24,7 @@
             </p>
             <div class="py-5">
               <a
-                href="https://tonightshw.vercel.app"
+                href="https://tonightshow.netlify.app"
                 target="_bank"
                 class="px-3 py-2 text-center text-lg font-secondary bg-blue-400 hover:bg-blue-300 rounded-full w-20"
                 >View</a
