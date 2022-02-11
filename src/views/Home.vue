@@ -41,12 +41,17 @@ export default {
     let homeScroll = ref(null);
     onMounted(() => {
       router.afterEach((to, from) => {
-        if (to.hash) {
+        if (to.hash && homeScroll.value) {
           homeScroll.value.scrollTop = document.querySelector(
             to.hash
           ).offsetTop;
         }
       });
+      if (router.currentRoute.value.hash && homeScroll.value) {
+        homeScroll.value.scrollTop = document.querySelector(
+          router.currentRoute.value.hash
+        ).offsetTop;
+      }
     });
     return {
       homeScroll,

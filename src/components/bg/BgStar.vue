@@ -120,8 +120,8 @@ export default {
       }
 
       function update() {
-        velocity.tx *= 0.96;
-        velocity.ty *= 0.96;
+        velocity.tx *= 0.86;
+        velocity.ty *= 0.86;
 
         velocity.x += (velocity.tx - velocity.x) * 0.8;
         velocity.y += (velocity.ty - velocity.y) * 0.8;

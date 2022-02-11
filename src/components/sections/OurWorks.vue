@@ -16,7 +16,9 @@
         logoURL="edusatarLogo.png"
         siteURL="https://edustarfastrack.com"
         title="Edustar Fastrack "
-        content="is an Excellent public school located at narakakkanam"
+        content="Edustar Fastrack is an IELTS Coaching center located at
+            Nedumkandam,Idukki is one of the best IELTS coaching center out
+            there"
         imgURL="/img/EdustarFastrack.png"
       />
       <our-works-card

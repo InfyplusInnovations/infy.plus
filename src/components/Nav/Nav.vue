@@ -34,6 +34,8 @@
 import { MenuAlt4Icon, XIcon } from "@heroicons/vue/solid";
 import { ref } from "@vue/reactivity";
 import Navlink from "./NavLink.vue";
+import { onMounted } from "@vue/runtime-core";
+import { useRouter } from "vue-router";
 
 export default {
   components: {
@@ -43,9 +45,16 @@ export default {
   },
   setup() {
     let menuOpen = ref(false);
+
     let menuClick = () => {
       menuOpen.value = !menuOpen.value;
     };
+    const router = useRouter();
+    onMounted(() => {
+      router.afterEach((to, from) => {
+        menuOpen.value = false;
+      });
+    });
     let links = [
       { id: 1, link: "/#home", linkTitle: "Home" },
       { id: 2, link: "/#works", linkTitle: "Works" },
