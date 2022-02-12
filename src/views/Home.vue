@@ -7,6 +7,7 @@
       <Hero id="home" />
       <OurWorks id="works" />
       <services id="services" />
+      <about />
       <testimonials id="testimonials" />
       <contact id="contact" />
       <Footer />
@@ -24,6 +25,7 @@ import Footer from "../components/sections/Footer.vue";
 import Services from "@/components/sections/Services/Services.vue";
 import { useRouter } from "vue-router";
 import { onMounted, ref } from "@vue/runtime-core";
+import About from "@/components/sections/About.vue";
 
 export default {
   components: {
@@ -35,6 +37,7 @@ export default {
     Footer,
     Services,
     BgStar,
+    About,
   },
   setup() {
     const router = useRouter();

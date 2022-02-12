@@ -12,16 +12,18 @@
       We Build Awesome Digital Experiences!
     </p>
     <div class="py-3">
-      <div
+      <router-link
+        to="/#contact"
         class="font-bold text-pink-400 underline text-2xl py-1 font-secondary"
       >
-        Contact us
-      </div>
-      <div
+        Contact us->
+      </router-link>
+      <router-link
+        to="/#works"
         class="font-bold text-blue-400 text-2xl py-1 absolute -right-10 bottom-20 rotate-90 font-secondary"
       >
         Our Works ->
-      </div>
+      </router-link>
     </div>
   </section>
 </template>

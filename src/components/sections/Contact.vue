@@ -43,7 +43,13 @@
               class="my-8 block w-full rounded-md text-white bg-gray-800 border-transparent focus:border-blue-500 focus:bg-gray-800 focus:ring-0"
               placeholder="Message"
             ></textarea>
-            <Button color="blue" type="submit">submit</Button>
+            <Button
+              color="blue"
+              type="submit"
+              class="flex justify-center items-center"
+              ><div class="animate-spin p-2" v-if="loading">O</div>
+              submit</Button
+            >
           </form>
         </div>
         <div class="text-white text-lg font-secondary max-w-lg">
@@ -82,6 +88,7 @@ export default {
   setup() {
     let result = ref(false);
     let err = ref(false);
+    let loading = ref(false);
     let msg = ref("");
     let email, phone, name, message;
     email = ref("");
@@ -90,6 +97,7 @@ export default {
     message = ref("");
 
     const formSubmit = () => {
+      loading.value = true;
       let formData = JSON.stringify({
         access_key: "7aeea531-37c3-4695-9962-570af8e0e70b",
         email: email.value,
@@ -123,6 +131,7 @@ export default {
           msg.value = "Something went wrong!";
         })
         .then(function () {
+          loading.value = false;
           email.value = "";
           phone.value = "";
           name.value = "";
@@ -141,6 +150,7 @@ export default {
       phone,
       name,
       message,
+      loading,
     };
   },
 };
