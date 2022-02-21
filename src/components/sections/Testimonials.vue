@@ -8,7 +8,7 @@
         </h3>
       </div>
       <div class="">
-        <swiper :pagination="true">
+        <swiper :pagination="true" :autoplay="{ delay: 3600 }">
           <swiper-slide class="py-5">
             <testimonial
               content="We developed a great relationship with Infyplus Innovations for making our dream project a reality and their dedication and attention to detail was impressive"
@@ -43,13 +43,13 @@ Thankyou Infyplus and team"
 import Testimonial from "../Testimonial.vue";
 import { Swiper, SwiperSlide } from "swiper/vue";
 // import Swiper core and required modules
-import SwiperCore, { Pagination } from "swiper";
+import SwiperCore, { Pagination, Autoplay } from "swiper";
 
 import "swiper/css/pagination";
 import "swiper/css";
 
 // install Swiper modules
-SwiperCore.use([Pagination]);
+SwiperCore.use([Pagination, Autoplay]);
 export default {
   components: {
     Testimonial,
