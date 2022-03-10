@@ -56,7 +56,7 @@
           <div>
             <div class="font-bold text-xl">visit us</div>
             <div class="">
-              Infyplus Technologies Prakashgram Idukki Kerala India - 685552
+              Infyplus Technologies Kattappana Idukki Kerala India - 685552
             </div>
             <div class="">Email : customer@infy.plus</div>
             <div class="">Phone : +91-9539876795 +91 8589878352</div>
