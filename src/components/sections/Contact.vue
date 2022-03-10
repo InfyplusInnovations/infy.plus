@@ -59,7 +59,7 @@
               Infyplus Technologies Prakashgram Idukki Kerala India - 685552
             </div>
             <div class="">Email : customer@infy.plus</div>
-            <div class="">Phone : +91-9539876795 +91 8589878253</div>
+            <div class="">Phone : +91-9539876795 +91 8589878352</div>
             <div class="py-5">
               <iframe
                 class="ring-4 p-2"
