@@ -1563,10 +1563,10 @@ postcss@^8.1.10, postcss@^8.4.5:
     picocolors "^1.0.0"
     source-map-js "^1.0.2"
 
-prettier-plugin-tailwindcss@^0.1.4:
-  version "0.1.4"
-  resolved "https://registry.yarnpkg.com/prettier-plugin-tailwindcss/-/prettier-plugin-tailwindcss-0.1.4.tgz#b09e826a57a0f69b0662eededd659b3d5a5551e7"
-  integrity sha512-kt3YFWqxcG9+bilBI0hPF7RjQZNtgBRvjJZGw6B2MNAjPqlfcYIiZnNaIEnq4XimKLTzZYxz6jQnUXmSQ/5njg==
+prettier-plugin-tailwindcss@^0.2.1:
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/prettier-plugin-tailwindcss/-/prettier-plugin-tailwindcss-0.2.1.tgz#989b35afd86c550cb671da69891aba4f4a051159"
+  integrity sha512-aIO8IguumORyRsmT+E7JfJ3A9FEoyhqZR7Au7TBOege3VZkgMvHJMkufeYp4zjnDK2iq4ktkvGMNOQR9T8lisQ==
 
 pretty-time@^1.1.0:
   version "1.1.0"
