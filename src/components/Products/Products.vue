@@ -21,11 +21,13 @@
             <p class="font-secondary text-slate-300">
               An application the that suggests you great movies to watch
               everyday
+              <br>
+              [TAKEN DOWN FROM SERVER]
             </p>
             <div class="py-5">
               <a
-                href="https://tonightshow.netlify.app"
-                target="_bank"
+                href="#"
+                
                 class="px-3 py-2 text-center text-lg font-secondary bg-blue-400 hover:bg-blue-300 rounded-full w-20"
                 >View</a
               >
